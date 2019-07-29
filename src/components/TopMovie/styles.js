@@ -7,10 +7,15 @@ export const Container = styled.TouchableHighlight`
   height: ${heightPercentageToDp('52')};
 `;
 
-export const Poster = styled.ImageBackground`
+export const Poster = styled.Image.attrs({
+  resizeMode: 'stretch',
+})`
   flex: 1;
 `;
 
 export const ViewInfo = styled.View`
-
+  width: ${widthPercentageToDp('100%')};
+  height: ${heightPercentageToDp('12')};
+  margin-top: ${heightPercentageToDp('42')};
+  background: blue;
 `;

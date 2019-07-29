@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Poster } from './styles';
+import { Container, Poster, ViewInfo } from './styles';
 
 export default function TopMovie({ data, navigation }) {
   const urlPoster = 'http://image.tmdb.org/t/p/w185';
@@ -11,8 +11,10 @@ export default function TopMovie({ data, navigation }) {
     >
       <Poster
         source={{ uri: `${urlPoster}/${data[0].poster_path}` }}        
-      >
-      </Poster>
+      />
+      {/* <ViewInfo>
+      
+      </ViewInfo> */}
     </Container>
   );
 }

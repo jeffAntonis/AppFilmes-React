@@ -12,7 +12,9 @@ export const ViewPoster = styled.View`
   height: ${heightPercentageToDp('30%')};
 `;
 
-export const Poster = styled.Image`
+export const Poster = styled.Image.attrs({
+  resizeMode: 'stretch',
+})`
   width: 100%;
   height: 100%;
 `;
@@ -20,10 +22,23 @@ export const Poster = styled.Image`
 export const Title = styled.Text`
   font-size: 20;
   font-weight: bold;
+  margin-top: 20;
+  margin-bottom: 16;
+  margin-left: ${widthPercentageToDp('3%')};
   color: #FFF;
 `;
 
+export const TxtVote = styled.Text`
+  font-size: 18;
+  font-weight: bold;  
+  margin-bottom: 16;
+  margin-left: ${widthPercentageToDp('3%')};
+  color: green;
+`;
+
 export const Description = styled.Text`
+  margin-left: ${widthPercentageToDp('3%')};
+  margin-right: ${widthPercentageToDp('3%')};
   font-size: 15;
   color: #FFF;
 `;
