@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { Container, ViewPoster, Poster, Title, Description } from './styles';
 
-import { requestDetailsMovie } from "~/store/ducks/todo";
+import { requestDetailsMovie } from "~/store/modules/todo/actions";
 
 export default function Details({ navigation }) {
   const urlPoster = 'http://image.tmdb.org/t/p/w185';

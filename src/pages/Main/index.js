@@ -6,7 +6,7 @@ import Header from '~/components/Header';
 import TopMovie from '~/components/TopMovie';
 import List from '~/components/List';
 
-import { requestTodoList } from "~/store/ducks/todo";
+import { requestTodoList } from "~/store/modules/todo/actions";
 
 export default function Main(props) {  
   const todo = useSelector(state => state.todo);

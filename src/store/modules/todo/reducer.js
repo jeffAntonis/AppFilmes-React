@@ -1,14 +1,4 @@
-// Action Types
-
-export const Types = {
-  REQUEST_TODO_LIST: 'REQUEST_TODO_LIST',
-  SUCCESS_TODO_LIST: 'SUCCESS_TODO_LIST',
-  FAILURE_TODO_LIST: 'FAILURE_TODO_LIST',
-  REQUEST_DETAILS_MOVIE: 'REQUEST_DETAILS_MOVIE',
-  SUCCESS_DETAILS_MOVIE: 'SUCCESS_DETAILS_MOVIE',
-};
-
-// Reducer
+import Types from '~/store/modules/todo/actionsTypes';
 
 const INITIAL_STATE = {
   data: [],
@@ -31,20 +21,5 @@ export default function reducer(state = INITIAL_STATE, action) {
       return { ...state, details: action.payload.data };
     default:
       return state;
-  }
-}
-
-// Action Creators
-
-export function requestTodoList() {
-  return {
-    type: Types.REQUEST_TODO_LIST,
-  }
-}
-
-export function requestDetailsMovie(id) {
-  return {
-    type: Types.REQUEST_DETAILS_MOVIE,
-    payload: id
   }
 }
