@@ -5,6 +5,7 @@ import { widthPercentageToDp, heightPercentageToDp } from "~/services/utils";
 export const Container = styled.View`
   height: ${heightPercentageToDp('20%')}px;
   margin-top: 10px;
+  margin-bottom: 20px;
 `;
 
 export const ListContainer = styled.ScrollView.attrs({

@@ -28,12 +28,25 @@ export const Title = styled.Text`
   color: #FFF;
 `;
 
+export const Row = styled.View`
+  width: ${widthPercentageToDp('100%')};
+  height: ${heightPercentageToDp('5%')};
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16;
+`;
+
 export const TxtVote = styled.Text`
   font-size: 18;
   font-weight: bold;  
-  margin-bottom: 16;
   margin-left: ${widthPercentageToDp('3%')};
   color: green;
+`;
+
+export const Text = styled.Text`
+  font-size: 15;
+  margin-left: ${widthPercentageToDp('3%')};
+  color: #FFF;
 `;
 
 export const Description = styled.Text`
