@@ -4,7 +4,7 @@ import { widthPercentageToDp, heightPercentageToDp } from "~/services/utils";
 
 export const Container = styled.View`
   height: ${heightPercentageToDp('20%')}px;
-  margin-top: 20px;
+  margin-top: 10px;
 `;
 
 export const ListContainer = styled.ScrollView.attrs({
@@ -12,7 +12,7 @@ export const ListContainer = styled.ScrollView.attrs({
   showsHorizontalScrollIndicator: false,
 })``;
 
-export const ListItem = styled.View`
+export const ListItem = styled.TouchableHighlight`
   width: ${widthPercentageToDp('25%')}px;
   height: ${heightPercentageToDp('20%')}px;
   background: rgba(255, 255, 255, 0.2);
