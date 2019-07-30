@@ -25,3 +25,11 @@ export const Poster = styled.Image`
   width: 100%;
   height: 100%;
 `;
+
+export const Lable = styled.Text`
+  font-size: 20;
+  font-weight: bold;
+  padding-left: ${widthPercentageToDp('2%')};
+  margin-top: 20;
+  color: #FFF;
+`;
