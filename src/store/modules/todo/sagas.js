@@ -6,11 +6,11 @@ import config from '~/config';
 
 function* getTodoList(action) {
   try {
-    const response = yield call(api.get, `/discover/movie?api_key=${config.API_KEY}&language=pt&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`);
+    const response = yield call(api.get, `/movie/popular?api_key=${config.API_KEY}&language=pt&page=1`);
 
     yield put({ type: Types.SUCCESS_TODO_LIST, payload: { data: response.data.results } });
   } catch (err) {
-    yield put({ type: Types.FAILURE_TODO_LIST });
+    console.log(err);
   }
 }
 
